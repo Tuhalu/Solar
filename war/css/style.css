@@ -1,0 +1,269 @@
+/* General Styles! - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - */
+body {
+	font: 13px Helmet, Freesans, sans-serif;
+	background-image: url(../img/paper.jpg);
+	background-repeat: repeat;
+	color: #333;
+	}
+
+.wrapper {
+	width: 1000px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+header, aside, article {
+	margin-bottom: 15px;
+	}
+	
+header {
+	display:inline-block;
+	width: 100%;
+	}
+	
+header>h1 a {
+	font: 50px Helmet, Freesans, sans-serif;
+	color: #46E611;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1.5;
+	text-shadow:
+      0 1px 0 #13B300, /* shadow */
+      0 -1px 0 #9BFB44; /* highlight */
+	}
+
+nav ul {
+	height: 35px;
+	width: 100%;
+	background: rgba(40, 250, 20, 0.6);
+	}
+	
+nav li {
+	float: left;	
+	height: 35px;
+	}
+	
+nav li:hover {
+	background: rgba(70, 0, 70, 0.5);
+	}
+	
+nav li a {
+	font: 20px Helmet, Freesans, sans-serif;
+	text-decoration: none;
+	color: rgba(50, 50, 50, 0.6);
+	display: inline-block;
+	padding: 2px 25px 0px 25px;
+	height: 32px;
+	}
+	
+nav li:hover a {
+	color: rgba(40, 250, 20, 1.0);
+	}
+
+nav .seperator {
+	float: left;
+	}
+	
+nav .filler{	
+	width: 462px;
+	}
+	
+nav .filler:hover {
+	background: rgba(40, 250, 20, 0.6);
+	}
+	
+aside {
+	display: inline-block;
+	float: right;
+	width: 180px;
+	}
+	
+aside ul {
+	list-style: disc inside none;
+	}
+	
+aside li {
+	background: rgba(50, 50, 50, 0.5);
+	padding: 2px 12px 2px 10px;
+	font: 15px Helmet, Freesans, sans-serif;
+	text-decoration: none;
+	color: #333;
+	}
+	
+aside li.current {
+	background: rgba(40, 250, 20, 0.6);
+	color: #555;
+	}
+	
+article {
+	width: 100%;
+	float: right;
+	}
+	
+footer {
+	display: block;
+	background: rgba(50, 50, 50, 0.6);
+	color: #333;
+	float: left;
+	width: 1000px;
+	height: 100px;
+	}
+	
+footer ul, footer p {
+	display: inline;
+	margin-right: 15px;
+	}
+	
+footer li {
+	padding: 5px 12px 5px 12px;
+	display: inline-block;
+	}
+	
+footer li:hover {
+	background: rgba(40, 250, 20, 0.8);
+	}	
+	
+footer li a {
+	font: 15px Helmet, Freesans, sans-serif;
+	text-decoration: none;
+	color: #222;
+	}
+	
+footer li:hover a {
+	color: #555;
+	}
+	
+/* Page Specific Styles! - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - */
+
+article h1 {
+	font: 25px Helmet, Freesans, sans-serif;
+	font-weight: 600;
+	margin: 5px 0px 8px 12px;
+	color: #444;
+	}
+	
+article h2 {
+	font: 18px Helmet, Freesans, sans-serif;
+	font-weight: 600;
+	margin: 5px 0px 8px 12px;
+	color: #444;
+	}
+	
+article p {
+	font: 15px Helmet, Freesans, sans-serif;
+	margin-left: 30px;
+	}
+
+.controlbox {
+	float: left;
+	margin-top: 15px;
+	}
+	
+.controlbox li, .controlbox a {
+	display: block;
+	float: left;
+	width: 32px;
+	height: 32px;
+	}
+	
+.controlbox .left {
+	background: url(../img/left.png);
+	}
+	
+.controlbox .left:hover {
+	background: url(../img/left_alt.png);
+	}
+	
+.controlbox .center {
+	background: url(../img/center.png);
+	}
+	
+.controlbox .center:hover {
+	background: url(../img/center_alt.png);
+	}
+	
+.controlbox .right {
+	background: url(../img/right.png);
+	}
+	
+.controlbox .right:hover {
+	background: url(../img/right_alt.png);
+	}
+	
+.messagebar {
+	background: rgba(50, 50, 50, 0.5) url(../img/exclaim.png) repeat-y;
+	width: 780px;
+	float: left;
+	font: 18px Helmet, Freesans, sans-serif;
+	padding: 10px 10px 10px 25px;
+	margin-bottom: 15px;
+	}
+	
+.body>ul {
+	float: left;
+	width: 780px;
+	list-style: circle;
+	margin: 10px 0px 0px 40px;
+	}
+	
+.body>ul li, .body>ul li a {
+	font: 15px Helmet, Freesans, sans-serif;
+	text-decoration: none;
+	color: #333;
+	}
+	
+article form .left, article form .right {
+	display: block;
+	float: left;
+	margin: 10px;
+	}
+	
+article form div input {
+	display: block;
+	font: 15px Helmet, Freesans, sans-serif;
+	color: #333;
+	background: #DDD;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	height: 23px;
+	border: 1px solid #555;
+	}
+	
+article form div label {
+	display: block;
+	font: 15px Helmet, Freesans, sans-serif;
+	color: #333;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 25px;
+	}
+	
+article form input:hover {
+	background: #EEE;
+	}
+	
+article .button {
+	padding: 5px 10px 5px 10px;
+	margin: 10px;
+	display: block;
+	border: 2px solid #24C400;
+	background: #46E611;
+	color: #555;
+	font: 15px Helmet, Freesans, sans-serif;
+	clear: both;
+	}
+	
+article .button:hover {
+	background: #68F833;
+	color: #777;
+	}
+	
+/* Print Styles! - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - */
+@media print {
+
+
+
+}

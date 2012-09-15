@@ -1,0 +1,3 @@
+# Module solarcalculator
+# RPC service class, partial path of RPC policy file
+solarcalculator.client.GreetingService, 68B5B264EBFA5F8E23EF2BCFBD933EC4.gwt.rpc
