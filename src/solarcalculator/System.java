@@ -1,6 +1,5 @@
 package solarcalculator;
 
-import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.*;
 import com.google.appengine.api.datastore.Key;
 import java.util.*;
@@ -10,7 +9,7 @@ public class System {
 	
 	@PrimaryKey
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-    private Key key;
+	private Long id;
 	
 	// Address info?
 	@Persistent
@@ -59,11 +58,17 @@ public class System {
 	private int panelLifespan;
 	
 	@Persistent
-	private int inverterLifespan;
+	private float averageSunlight;
+	
+	@Persistent
+	private boolean isBraced;
+	
+	@Persistent 
+	private float inverterEfficiency;
 	
 	
-	public System() {
-		
+	public System(boolean existing) {
+		isExisting = existing;
 	}
 	
 	public float getLongitude() {
@@ -146,22 +151,6 @@ public class System {
 		this.panelLifespan = panelLifespan;
 	}
 
-	public int getInverterLifespan() {
-		return inverterLifespan;
-	}
-
-	public void setInverterLifespan(int inverterLifespan) {
-		this.inverterLifespan = inverterLifespan;
-	}
-	
-	public Key getKey() {
-		return key;
-	}
-
-	public void setKey(Key key) {
-		this.key = key;
-	}
-
 	public boolean isExisting() {
 		return isExisting;
 	}
@@ -169,5 +158,54 @@ public class System {
 	public void setExisting(boolean isExisting) {
 		this.isExisting = isExisting;
 	}
+
+	public float getDailyUsage() {
+		return dailyUsage;
+	}
+
+	public void setDailyUsage(float dailyUsage) {
+		this.dailyUsage = dailyUsage;
+	}
+
+	public float getDayTimeHourlyUsage() {
+		return dayTimeHourlyUsage;
+	}
+
+	public void setDayTimeHourlyUsage(float dayTimeHourlyUsage) {
+		this.dayTimeHourlyUsage = dayTimeHourlyUsage;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public float getAverageSunlight() {
+		return averageSunlight;
+	}
+
+	public void setAverageSunlight(float averageSunlight) {
+		this.averageSunlight = averageSunlight;
+	}
+
+	public boolean isBraced() {
+		return isBraced;
+	}
+
+	public void setBraced(boolean isBraced) {
+		this.isBraced = isBraced;
+	}
+
+	public float getInverterEfficiency() {
+		return inverterEfficiency;
+	}
+
+	public void setInverterEfficiency(float inverterEfficiency) {
+		this.inverterEfficiency = inverterEfficiency;
+	}
+	
 	
 }

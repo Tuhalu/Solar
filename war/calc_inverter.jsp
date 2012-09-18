@@ -4,112 +4,65 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
+ 
+	<title>Inverter Information</title>
 	
-	<title>Inverter</title>
+	<%@ include file="info.jsp" %>
 	
-	<meta name="title" content="calculadora de energia solar">
-	<meta name="description" content="A Solar Power Calculator.">
-	<meta name="google-site-verification" content="">	
-	<meta name="author" content="The Package">
-	<meta name="Copyright" content="Copyright The Package 2012. All Rights Reserved.">
-	
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<!--[if lt IE 8 ]> <link rel="stylesheet" href="css/ie.css"> <![endif]-->
-	<!--[if IE 8 ]> <link rel="stylesheet" href="css/ie8.css"> <![endif]-->
 </head>
 
 <body>
 
-<div class="wrapper">
-
-	<header>
+	<%@ include file="header.jsp" %>
 		
-		<h1><a href="index.html">Calculadora de Energia Solar</a></h1>
-		
-		<nav>
-		
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<img class="seperator" src="img/nav_sep.png" />
-				<li><a href="calc_type.html">Calculator</a></li>
-				<img class="seperator" src="img/nav_sep.png" />
-				<li><a href="compare.html">Compare</a></li>
-				<img class="seperator" src="img/nav_sep.png" />
-				<li><a href="about.html">About</a></li>
-				<img class="seperator" src="img/nav_sep.png" />
-			</ul>
-		
-		</nav>
+	<h1>Inverter Information</h1>
 	
-	</header>
+	<div class="messagebar">
+		Please enter your inverter information.
+	</div>
 	
-	<article>
-		
-		<h1>Inverter Information</h1>
-		
-		<div class="messagebar">
-			Please enter your inverter information.
-		</div>
-		
-		<aside>
-		
-			<ul>
-				<li>Calculation Type</li>
-				<li>Location</li>
-				<li>Panels</li>
-				<li>Panel Configuration</li>
-				<li class="current">Inverter</li>
-				<li>Electricity Details</li>
-				<li>Results</li>
-			</ul>
-		
-		</aside>
-		
-		<div class="body">
-		
-			<form name="inverter" action="" method="post">
-				<div class="left">
-					<label for="efficiency">Inverter Efficiency</label>
-					<label for="lifespan">Inverter Lifespan</label>
-					<label for="replacement">Inverter Replacement Cost</label>
-				</div>
-				<div class="right">
-					<input type="text" name="efficiency" />
-					<input type="text" name="lifespan" />
-					<input type="text" name="replacement" />
-				</div>
-				<input type="submit" value="Continue" class="button" />
-			</form>
+	<aside>
 	
-		</div>
-		
-		<div class="controlbox">
-			<ul>
-				<li><a class="left" href=""></a></li>
-				<li><a class="center" href=""></a></li>
-				<li><a class="right" href=""></a></li>
-			</ul>
-		</div>
-		
-	</article>
-	
-	<footer>
-		
 		<ul>
-			<li><a href="">Contact</a></li>
-			<li><a href="">Legal</a></li>
+			<li>Calculation Type</li>
+			<li>Location</li>
+			<li>Panels</li>
+			<li>Panel Configuration</li>
+			<li class="current">Inverter</li>
+			<li>Electricity Information</li>
+			<li>Results</li>
 		</ul>
+	
+	</aside>
+	
+	<div class="body">
+	
+		<form name="inverter" action="/showresults" method="post">
+			<div class="left">
+				<label for="cost">Inverter Cost</label>
+				<label for="efficiency">Inverter Efficiency</label>
+				<label for="efficiencyloss">Annual Efficiency Loss</label>
+			</div>
+			<div class="right">
+				<input type="text" name="cost" />
+				<input type="text" name="efficiency" />
+				<input type="text" name="efficiencyloss" />
+				<input type="hidden" name="id" value=<%= request.getParameter("id") %> />
+			</div>
+			<input type="submit" value="Continue" class="button" />
+		</form>
+
+	</div>
+	
+	<div class="controlbox">
+		<ul>
+			<li><a class="left" href="calc_panel_config.jsp"></a></li>
+			<li><a class="center" href="#"></a></li>
+			<li><a class="right" href="calc_elec.jsp"></a></li>
+		</ul>
+	</div>
 		
-		<p>&copy; Copyright The Package 2012. All Rights Reserved.</p>
-		
-	</footer>
-
-</div>
-
-
+	<%@ include file="footer.jsp" %>
   
 </body>
 </html>
