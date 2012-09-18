@@ -35,7 +35,7 @@ public class ShowResults extends HttpServlet {
         	manager.close();
         }
 		
-		response.sendRedirect("/results?=" + system.getId());
+		response.sendRedirect("/calc_results.jsp");
 	}
 
 }

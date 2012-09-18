@@ -16,6 +16,7 @@ public class ResetData extends HttpServlet {
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
+		response.sendRedirect("/index.jsp");
 	}
 
 }
