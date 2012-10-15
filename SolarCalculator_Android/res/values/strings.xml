@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Solar Power Calculator</string>
+    <string name="app_desc">This app will calculate the amount of power you will save with a solar panel installation. \n\nClick the button below to get started.</string>
+    <string name="menu_exit">Exit</string>
+    <string name="loc_page">Location Information</string>
+    <string name="panelinfo_page">Panel Information</string>
+    <string name="panelconfig_page">Panel Configuration</string>
+    <string name="inverter_page">Inverter Information</string>
+    <string name="results_page">Calculation Results</string>
+
+</resources>

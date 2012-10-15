@@ -156,42 +156,6 @@ article p {
 	margin-left: 30px;
 	}
 
-.controlbox {
-	float: left;
-	margin-top: 15px;
-	}
-	
-.controlbox li, .controlbox a {
-	display: block;
-	float: left;
-	width: 32px;
-	height: 32px;
-	}
-	
-.controlbox .left {
-	background: url(../img/left.png);
-	}
-	
-.controlbox .left:hover {
-	background: url(../img/left_alt.png);
-	}
-	
-.controlbox .center {
-	background: url(../img/center.png);
-	}
-	
-.controlbox .center:hover {
-	background: url(../img/center_alt.png);
-	}
-	
-.controlbox .right {
-	background: url(../img/right.png);
-	}
-	
-.controlbox .right:hover {
-	background: url(../img/right_alt.png);
-	}
-	
 .messagebar {
 	background: rgba(50, 50, 50, 0.5) url(../img/exclaim.png) repeat-y;
 	width: 780px;
@@ -260,6 +224,33 @@ article .button:hover {
 	background: #68F833;
 	color: #777;
 	}
+	
+/* James' additions */
+
+.error {
+	clear: left;
+	font: 16px Helmet, Freesans, sans-serif;
+	font-weight: bold;
+	color: #FF0000;
+	display: block;
+	margin-left: 10px	
+}
+
+.resulttitle {
+	font: 16px Helmet, Freesans, sans-serif;
+	font-weight: bold;
+	color: #444;
+	margin-left: 20px;
+	
+}
+
+.result {
+	font: 16px Helmet, Freesans, sans-serif;
+	font-weight: bold;
+	color: #444;
+	
+}
+
 	
 /* Print Styles! - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - */
 @media print {

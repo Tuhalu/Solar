@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="NoTitleTheme" parent="android:Theme.NoTitleBar" />
+    
+    <style name="paperback">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/paperback</item>
+    </style>    
+    
+    <style name="pageTitle">
+        <item name="android:id">@+id/pageTitle</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#9928FF14</item>
+        <item name="android:textColor">#99323232</item>
+        <item name="android:textSize">30sp</item>
+    </style> 
+    
+    <style name="horizLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+    
+    <style name="label">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">#99323232</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    
+    <style name="input" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:background">@drawable/input</item>
+        <item name="android:textColor">#303030</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+    
+    <style name="button" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">#303030</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    
+    <style name="checkbox">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:paddingLeft">45dp</item>
+        <item name="android:textColor">#99323232</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    
+    <style name="sectionTitle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">#77101010</item>
+        <item name="android:background">#9928FF14</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="result">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">#99323232</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+</resources>

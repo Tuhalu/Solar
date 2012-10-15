@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/paperback">
+
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/pageTitle"
+        android:text="@string/panelinfo_page" />
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:text="System Size (KW)" />
+    
+    <EditText 
+        style="@style/input"
+        android:id="@+id/sizeEdit" 
+        android:inputType="numberDecimal" 
+        android:text="4.95" />
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:text="Cost ($)" />
+    
+    <EditText 
+        style="@style/input"
+        android:id="@+id/costEdit" 
+        android:inputType="numberDecimal" 
+        android:text="18000" />
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:text="Annual Efficiency Loss (%)" />
+    
+    <EditText 
+        style="@style/input"
+        android:id="@+id/lossEdit" 
+        android:inputType="numberDecimal" 
+        android:text="7" />
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:id="@+id/dirText"
+        android:text="Direction Facing (0-360)" />
+    
+    <CheckBox 
+        style="@style/checkbox"
+        android:id="@+id/dirCheck" 
+        android:text="Use Compass"
+        android:checked="false" />
+    
+    <EditText 
+        style="@style/input"
+        android:id="@+id/dirEdit" 
+        android:inputType="numberDecimal" />
+    
+    <CheckBox 
+        style="@style/checkbox"
+        android:id="@+id/bracingCheck" 
+        android:text="Panel Bracing" />
+    
+    <LinearLayout style="@style/horizLayout" 
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp" 
+     	android:layout_marginTop="5dp"
+     	android:gravity="bottom|center">
+    
+     <Button 
+         style="@style/button"
+         android:id="@+id/backButton" 
+         android:layout_weight="5"
+         android:text="Back" />
+     
+     <Button 
+         style="@style/button"
+         android:id="@+id/continueButton" 
+         android:layout_weight="5" 
+         android:text="Continue" />
+     
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+	</ScrollView>
+    
+</LinearLayout>

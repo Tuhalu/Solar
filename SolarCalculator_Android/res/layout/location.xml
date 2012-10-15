@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/paperback">
+
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <TextView
+        style="@style/pageTitle"
+        android:text="@string/loc_page" />
+    
+    <CheckBox 
+        style="@style/checkbox"
+        android:id="@+id/locCheck" 
+        android:text="Use Current Location"
+        android:checked="false"
+        android:layout_marginTop="10dp" />
+    
+    <EditText 
+        style="@style/input"
+        android:id="@+id/curlocEdit" 
+        android:enabled="false"
+        android:visibility="gone" />
+    
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+        android:id="@+id/longLatLay"
+        android:layout_marginTop="5dp">
+	    
+	    <LinearLayout style="@style/horizLayout">
+	     
+		     <TextView 
+		         style="@style/label"
+		         android:layout_weight="5"
+		         android:text="Longitude" />
+		     
+		     <TextView
+		         style="@style/label"
+		         android:layout_weight="5"
+		         android:layout_marginLeft="5dp"
+		         android:text="Latitude" />
+	     
+	    </LinearLayout>
+	    
+	    <LinearLayout style="@style/horizLayout">
+	     
+		    <EditText 
+		        style="@style/input"
+				android:layout_weight="5"
+				android:layout_marginLeft="0dp"
+	        	android:layout_marginRight="5dp"
+				android:id="@+id/longEdit"
+				android:inputType="numberDecimal" >
+				<requestFocus />
+		     </EditText>
+		     
+		     <EditText 
+		         style="@style/input"
+				 android:layout_weight="5"
+				 android:layout_marginLeft="5dp"
+	        	 android:layout_marginRight="0dp"
+		         android:id="@+id/latEdit" 
+		         android:inputType="numberDecimal" />
+	     
+	    </LinearLayout>
+    </LinearLayout>
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Daily Energy Usage (KWh)" />
+    
+    <EditText 
+        style="@style/input"
+        android:id="@+id/dailyusageEdit" 
+        android:inputType="numberDecimal" 
+        android:text="40" />
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:text="Daytime Hourly Usage (KWh)" />
+    
+    <EditText
+        style="@style/input"
+        android:id="@+id/dayusageEdit" 
+        android:inputType="numberDecimal" 
+        android:text="1" />
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:text="Daily Sunlight Hours" />
+    
+    <EditText 
+        style="@style/input"
+        android:id="@+id/dailysunEdit" 
+        android:inputType="numberDecimal" 
+        android:text="4.5" />
+
+	<LinearLayout style="@style/horizLayout" 
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp" 
+     	android:layout_marginTop="5dp"
+     	android:gravity="bottom|center">
+    
+	     <Button 
+	         style="@style/button"
+	         android:id="@+id/backButton" 
+	         android:layout_weight="5"
+	         android:text="Back" />
+	     
+	     <Button 
+	         style="@style/button"
+	         android:id="@+id/continueButton" 
+	         android:layout_weight="5" 
+	         android:text="Continue" />
+     
+    </LinearLayout>
+    
+	</LinearLayout>
+	
+	</ScrollView>
+
+</LinearLayout>

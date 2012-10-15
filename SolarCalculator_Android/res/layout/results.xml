@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/paperback">
+
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/pageTitle"
+        android:text="@string/results_page" />
+    
+    <TextView 
+        style="@style/sectionTitle"
+        android:text="Return on Investment" />
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:text="Estimated Time Till ROI" />
+    
+    <TextView 
+        style="@style/result"
+        android:paddingLeft="15dp"
+        android:id="@+id/roiTimeText" 
+        android:text="20 Years" />
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:text="Expected Daily Output" />
+    
+    <TextView 
+        style="@style/result"
+        android:paddingLeft="15dp"
+        android:id="@+id/dailyOutText" 
+        android:text="20 kW" />
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:text="System Cost" />
+    
+    <TextView 
+        style="@style/result"
+        android:paddingLeft="15dp"
+        android:id="@+id/costText" 
+        android:text="$20" />
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:text="Savings (1st Month)" />
+    
+    <TextView 
+        style="@style/result"
+        android:paddingLeft="15dp"
+        android:id="@+id/monthSaveText" 
+        android:text="$20" />
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:text="Savings (Lifespan)" />
+    
+    <TextView 
+        style="@style/result"
+        android:paddingLeft="15dp"
+        android:id="@+id/lifeSaveText" 
+        android:text="$2000" />
+    
+    <LinearLayout style="@style/horizLayout" 
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp" 
+     	android:layout_marginTop="5dp"
+     	android:gravity="bottom|center">
+    
+     <Button 
+         style="@style/button"
+         android:id="@+id/backButton"
+         android:text="Back" />
+     
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+	</ScrollView>
+    
+</LinearLayout>

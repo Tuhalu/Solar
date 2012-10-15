@@ -16,13 +16,8 @@
 	</servlet>
 	
 	<servlet>
-		<servlet-name>panelsconfig</servlet-name>
-		<servlet-class>solarcalculator.PanelsConfig</servlet-class>
-	</servlet>
-	
-	<servlet>
-		<servlet-name>showresults</servlet-name>
-		<servlet-class>solarcalculator.ShowResults</servlet-class>
+		<servlet-name>inverterinput</servlet-name>
+		<servlet-class>solarcalculator.InverterInput</servlet-class>
 	</servlet>
 	
 	<servlet>
@@ -46,13 +41,8 @@
 	</servlet-mapping>
 	
 	<servlet-mapping>
-		<servlet-name>panelsconfig</servlet-name>
-		<url-pattern>/panelsconfig</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>showresults</servlet-name>
-		<url-pattern>/showresults</url-pattern>
+		<servlet-name>inverterinput</servlet-name>
+		<url-pattern>/inverterinput</url-pattern>
 	</servlet-mapping>	
 	
 	<servlet-mapping>

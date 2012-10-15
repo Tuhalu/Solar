@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/paperback">
+
+    <TextView
+        style="@style/pageTitle"
+        android:text="@string/app_name" 
+        android:layout_height="100dp"
+        android:textSize="42sp"/>
+    
+    <TextView 
+        style="@style/label"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/app_desc" />
+    
+    <Button 
+        style="@style/button"
+        android:id="@+id/newButton" 
+        android:layout_height="60dp" 
+        android:layout_marginBottom="10dp" 
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp" 
+        android:layout_marginRight="15dp"  
+        android:text="Start"/>
+    
+</LinearLayout>

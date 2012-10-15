@@ -5,6 +5,7 @@ import java.io.*;
 import javax.jdo.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
+
 import com.google.appengine.api.users.*;
 import com.google.appengine.api.datastore.KeyFactory.*;
 
@@ -18,6 +19,7 @@ public class CreateSystem extends HttpServlet {
 		
 		boolean existing;
 		
+		HttpSession session = request.getSession(true);
 		PersistenceManager manager = PMF.get().getPersistenceManager();
 		String installationType = request.getParameter("type");
 		
@@ -35,7 +37,10 @@ public class CreateSystem extends HttpServlet {
         	manager.close();
         }
 		
-		response.sendRedirect("/calc_location.jsp?id=" + system.getId());
+		session.setAttribute("user", system.getId().toString());
+		
+		response.sendRedirect("/calc_location.jsp");
+		
 	}
 	
 }

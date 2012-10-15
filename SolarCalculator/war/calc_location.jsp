@@ -27,9 +27,7 @@
 			<li>Calculation Type</li>
 			<li class="current">Location</li>
 			<li>Panels</li>
-			<li>Panel Configuration</li>
 			<li>Inverter</li>
-			<li>Electricity Information</li>
 			<li>Results</li>
 		</ul>
 	
@@ -37,35 +35,34 @@
 	
 	<div class="body">
 		
+		<span class="error">${errors.usage}</span>
+		<span class="error">${errors.hourly}</span>
+		<span class="error">${errors.sunlight}</span>
+		<span class="error">${errors.longitude}</span>
+		<span class="error">${errors.latitude}</span>
+		
+		
 		<form name="location" action="/locationinput" method="post">
 			<div class="left">
-				<label for="street">Longitude</label>
-				<label for="city">Latitude</label>
 				<label for="usage">Daily Energy Usage (KWh)</label>
 				<label for="hourly">Day Time Hourly Usage (KWh)</label>
+				<label for="longitude">Longitude</label>
+				<label for="latitude">Latitude</label>
 				<br /><br />
 				<label for="sunlight">Daily hours of Sunlight</label>
 			</div>
 			<div class="right">
-				<input type="text" name="longitude" />
-				<input type="text" name="latitude" />
-				<input type="text" name="usage" />
-				<input type="text" name="hourly" />
+				<input type="text" name="usage" ${param.usage}/>
+				<input type="text" name="hourly" value="${param.hourly}" />
+				<input type="text" name="longitude" value="${param.longitude}" />
+				<input type="text" name="latitude" value="${param.latitude}" />
 				<br /><br />
-				<input type="text" name="sunlight" />
-				<input type="hidden" name="id" value=<%= request.getParameter("id") %> />
+				<input type="text" name="sunlight" value="${param.sunlight}" />
+				
 			</div>
 			<input type="submit" value="Continue" class="button" />
 		</form>
 	
-	</div>
-	
-	<div class="controlbox">
-		<ul>
-			<li><a class="left" href="calc_type.jsp"></a></li>
-			<li><a class="center" href="#"></a></li>
-			<li><a class="right" href="calc_panels.jsp"></a></li>
-		</ul>
 	</div>
 		
 	<%@ include file="footer.jsp" %>

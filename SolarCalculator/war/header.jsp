@@ -2,7 +2,7 @@
 
 	<header>
 		
-		<h1><a href="">Calculadora de Energia Solar</a></h1>
+		<h1><a href="">Sõlar Power Calculator</a></h1>
 		
 		<nav>
 		

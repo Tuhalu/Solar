@@ -11,7 +11,8 @@ public class System {
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
 	private Long id;
 	
-	// Address info?
+	
+	
 	@Persistent
 	private int yearsSinceInstall;
 	

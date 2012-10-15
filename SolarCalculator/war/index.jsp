@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	
-	<title>Calculadora de Energia Solar</title>
+	<title>Solar Power Calculator</title>
 	
 	<%@ include file="info.jsp" %>
 	

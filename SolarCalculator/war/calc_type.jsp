@@ -26,9 +26,7 @@
 			<li class="current">Calculation Type</li>
 			<li>Location</li>
 			<li>Panels</li>
-			<li>Panel Configuration</li>
 			<li>Inverter</li>
-			<li>Electricity Information</li>
 			<li>Results</li>
 		</ul>
 	
@@ -48,14 +46,6 @@
 			<input type="submit" value="Continue" class="button" />
 		</form>
 		
-	</div>
-	
-	<div class="controlbox">
-		<ul>
-			<li><a class="left" href="#"></a></li>
-			<li><a class="center" href="#"></a></li>
-			<li><a class="right" href="calc_location.jsp"></a></li>
-		</ul>
 	</div>
 	
 	<%@ include file="footer.jsp" %>

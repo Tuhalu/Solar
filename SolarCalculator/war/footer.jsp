@@ -12,5 +12,3 @@
 	</footer>
 
 </div>
-
-<script src="js/functions.js"></script>

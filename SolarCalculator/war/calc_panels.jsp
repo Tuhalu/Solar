@@ -27,9 +27,7 @@
 			<li>Calculation Type</li>
 			<li>Location</li>
 			<li class="current">Panels</li>
-			<li>Panel Configuration</li>
 			<li>Inverter</li>
-			<li>Electricity Information</li>
 			<li>Results</li>
 		</ul>
 	
@@ -37,29 +35,29 @@
 	
 	<div class="body">
 	
+		<span class="error">${errors.paneloutput}</span>
+		<span class="error">${errors.cost}</span>
+		<span class="error">${errors.efficiencyloss}</span>
+		<span class="error">${errors.angle}</span>
+	
 		<form name="panels" action="/panelsinput" method="post">
 			<div class="left">
 				<label for="paneloutput">System Size (KW)</label>
 				<label for="cost">Cost ($)</label>
 				<label for="efficiencyloss">Annual Efficiency Loss</label>
+				<label for="angle">Panel Facing</label>
+				<label for="bracing">Adjust for bracing?</label>
 			</div>
 			<div class="right">
-				<input type="text" name="paneloutput" />
-				<input type="text" name="cost" />
-				<input type="text" name="efficiencyloss" />
-				<input type="hidden" name="id" value=<%= request.getParameter("id") %> />
+				<input type="text" name="paneloutput" value="${param.paneloutput}"/>
+				<input type="text" name="cost" value="${param.cost}"/>
+				<input type="text" name="efficiencyloss" value="${param.efficiencyloss}"/>
+				<input type="text" name="angle" value="${param.angle}"/>
+				<input type="checkbox" name="bracing" value="yes" value="${param.bracing}"/>
 			</div>
 			<input type="submit" value="Continue" class="button" />
 		</form>
 
-	</div>
-	
-	<div class="controlbox">
-		<ul>
-			<li><a class="left" href="calc_location.jsp"></a></li>
-			<li><a class="center" href="#"></a></li>
-			<li><a class="right" href="calc_panel_config.jsp"></a></li>
-		</ul>
 	</div>
 		
 	<%@ include file="footer.jsp" %>
